@@ -3,6 +3,8 @@
     package="com.example.andylove.myapplication">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
@@ -26,7 +28,8 @@
         <activity
             android:name=".main.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".KotlinActivity"></activity>
+        <activity android:name=".kotlin.KotlinActivity" />
+        <activity android:name=".kotlin.KotlinActivity2"/>
     </application>
 
 </manifest>

@@ -9,7 +9,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.andylove.myapplication.BaseActivity;
-import com.example.andylove.myapplication.KotlinActivity;
+import com.example.andylove.myapplication.kotlin.KotlinActivity;
 import com.example.andylove.myapplication.R;
 
 import butterknife.Bind;

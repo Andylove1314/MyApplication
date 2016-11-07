@@ -61,6 +61,8 @@ public class MainActivity extends BaseActivity
         toggle.syncState();
         navView.setNavigationItemSelectedListener(this);
         MainActivityPermissionsDispatcher.captureWithCheck(this);
+        MainActivityPermissionsDispatcher.getCotactsWithCheck(this);
+        MainActivityPermissionsDispatcher.sendMsgWithCheck(this);
     }
 
     @Override
@@ -163,5 +165,14 @@ public class MainActivity extends BaseActivity
     @OnNeverAskAgain(Manifest.permission.CAMERA)
     public void showAgain() {
         Toast.makeText(this, "再来", Toast.LENGTH_LONG).show();
+    }
+
+    @NeedsPermission(Manifest.permission.READ_CONTACTS)
+    void getCotacts() {
+    }
+
+
+    @NeedsPermission(Manifest.permission.SEND_SMS)
+    void sendMsg() {
     }
 }
