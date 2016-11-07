@@ -29,7 +29,8 @@
             android:name=".main.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".kotlin.KotlinActivity" />
-        <activity android:name=".kotlin.KotlinActivity2"/>
+        <activity android:name=".kotlin.KotlinActivity2" />
+        <activity android:name=".KolinBaseActivity"></activity>
     </application>
 
 </manifest>

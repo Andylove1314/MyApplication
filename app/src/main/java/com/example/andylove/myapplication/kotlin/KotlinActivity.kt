@@ -1,9 +1,8 @@
 package com.example.andylove.myapplication.kotlin
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
-import android.widget.Toast
+import com.example.andylove.myapplication.KolinBaseActivity
 import com.example.andylove.myapplication.R
 import org.jetbrains.anko.*
 
@@ -11,11 +10,11 @@ import org.jetbrains.anko.*
  * hello kotlin & anko DSL
  *
  */
-class KotlinActivity : AppCompatActivity() {
+class KotlinActivity : KolinBaseActivity() {
 
-    var a : String = "hello kotlin & anko DSL"
+    var a: String = "hello kotlin & anko DSL"
+    var hello: TextView? = null
 
-    var hello : TextView? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setAnkoContentView()
@@ -23,11 +22,9 @@ class KotlinActivity : AppCompatActivity() {
         hello!!.textColor = getColor(R.color.colorAccent)
     }
 
-    /**
-     * 设置布局
-     */
-    private fun setAnkoContentView() {
+    override fun setAnkoContentView() {
         verticalLayout() {
+            editText().hint = "sdas"
             //textView
             hello = textView("text view") {
                 textSize = 25f
@@ -36,13 +33,14 @@ class KotlinActivity : AppCompatActivity() {
                 height = wrapContent
             }
             //button
-            button("button").lparams {
+            button("button") { onClick { ctx.toast(hello!!.text.toString()) } }.lparams {
                 width = matchParent
                 height = wrapContent
                 topMargin = dip(20)
-            }.setOnClickListener {
-                Toast.makeText(context, hello!!.text.toString(), Toast.LENGTH_LONG).show()
+
             }
         }
     }
+
+
 }

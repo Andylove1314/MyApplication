@@ -18,7 +18,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.example.andylove.myapplication.BaseActivity;
+import com.example.andylove.myapplication.JavaBaseActivity;
 import com.example.andylove.myapplication.R;
 
 import butterknife.Bind;
@@ -30,7 +30,7 @@ import permissions.dispatcher.PermissionRequest;
 import permissions.dispatcher.RuntimePermissions;
 
 @RuntimePermissions
-public class MainActivity extends BaseActivity
+public class MainActivity extends JavaBaseActivity
         implements NavigationView.OnNavigationItemSelectedListener{
 
     @Bind(R.id.toolbar)

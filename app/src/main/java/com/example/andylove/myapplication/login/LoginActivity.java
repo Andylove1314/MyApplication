@@ -8,9 +8,9 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.example.andylove.myapplication.BaseActivity;
-import com.example.andylove.myapplication.kotlin.KotlinActivity;
+import com.example.andylove.myapplication.JavaBaseActivity;
 import com.example.andylove.myapplication.R;
+import com.example.andylove.myapplication.kotlin.KotlinActivity;
 
 import butterknife.Bind;
 import butterknife.OnClick;
@@ -19,7 +19,7 @@ import butterknife.OnClick;
  * Created by andylove on 2016/11/3.
  */
 
-public class LoginActivity extends BaseActivity implements LoginView {
+public class LoginActivity extends JavaBaseActivity implements LoginView {
 
     @Bind(R.id.textView2)
     EditText textView2 = null;
@@ -65,6 +65,7 @@ public class LoginActivity extends BaseActivity implements LoginView {
     @Override
     public void navigateToHome() {
         Intent intent = new Intent(this, KotlinActivity.class);
+//        Intent intent = new Intent(this, KotlinActivity2.class);
 //        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
