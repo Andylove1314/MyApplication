@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import com.example.andylove.myapplication.JavaBaseActivity;
 import com.example.andylove.myapplication.R;
-import com.example.andylove.myapplication.kotlin.KotlinActivity;
+import com.example.andylove.myapplication.kotlin.KotlinActivity2;
 
 import butterknife.Bind;
 import butterknife.OnClick;
@@ -64,8 +64,8 @@ public class LoginActivity extends JavaBaseActivity implements LoginView {
 
     @Override
     public void navigateToHome() {
-        Intent intent = new Intent(this, KotlinActivity.class);
-//        Intent intent = new Intent(this, KotlinActivity2.class);
+//        Intent intent = new Intent(this, KotlinActivity.class);
+        Intent intent = new Intent(this, KotlinActivity2.class);
 //        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();

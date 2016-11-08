@@ -13,13 +13,11 @@ import org.jetbrains.anko.*
 class KotlinActivity : KolinBaseActivity() {
 
     var a: String = "hello kotlin & anko DSL"
-    var hello: TextView? = null
+    var hello : TextView = null!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setAnkoContentView()
-        hello!!.text = a
-        hello!!.textColor = getColor(R.color.colorAccent)
     }
 
     override fun setAnkoContentView() {
@@ -28,6 +26,8 @@ class KotlinActivity : KolinBaseActivity() {
             //textView
             hello = textView("text view") {
                 textSize = 25f
+                text = a
+                textColor = getColor(R.color.colorAccent)
             }.lparams {
                 width = matchParent
                 height = wrapContent
