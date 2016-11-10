@@ -39,24 +39,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="E:\demos\github\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_573ffcd2cbd3fcb6171a2d8a5a095cb1bb6a7a50\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\andylove\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.4.0\ea392375cf9ff59234a82e7928a204215ccc98cd\butterknife-annotations-8.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
-        <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-annotations-8.4.0_dea999a6e8684e5df85a5ccae24fa1fb7a5332ec\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\andylove\.gradle\caches\modules-2\files-2.1\org.jetbrains.anko\anko-appcompat-v7\0.9\69676bf4015be3e182e00dbebea5ee0c9325e78a\anko-appcompat-v7-0.9.jar"
         jumboMode="true"
         optimize="true"
@@ -93,6 +75,87 @@
     </item>
     <item
         is-multidex="true"
+        jar="E:\demos\github\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_ae51f85468485acf9844c0bd699c45b791dfbfb7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\demos\github\MyApplication\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_792c90388e128f8dfa9806c6548f470ed2e4cf1d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\demos\github\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_70e81007c0cc64192ea95957b6adc1f31b66bfa0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\demos\github\MyApplication\app\build\intermediates\exploded-aar\com.github.hotchemi\permissionsdispatcher\2.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="cf75354ce176fdaacb85b0db82bad0450ad9984b">
+        <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.hotchemi-permissionsdispatcher-2.2.0_ba7e10f7e02d5b98c5d68ae9f1834750e8e6802a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\demos\github\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_65c93988cfa2fdc02b27cbd2dcbfa27876f87bdf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\demos\github\MyApplication\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="28e2298007299f6c720dbdf65b6b613468b3af30">
+        <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d13628bfff9e64dc06baa74425a7a2c839abba62\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\andylove\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.0.4\9c8d1a5d2eea3c9a7f58baa1a2fa11498cb41d0\kotlin-stdlib-1.0.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="09c8d1a5d2eea3c9a7f58baa1a2fa11498cb41d0">
+        <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\kotlin-stdlib-1.0.4_fff4d55b3d7a0a73bfe7bb461b1ba4cef8a87e1c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\demos\github\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_573ffcd2cbd3fcb6171a2d8a5a095cb1bb6a7a50\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\andylove\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.4.0\ea392375cf9ff59234a82e7928a204215ccc98cd\butterknife-annotations-8.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-annotations-8.4.0_dea999a6e8684e5df85a5ccae24fa1fb7a5332ec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="E:\demos\github\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -120,30 +183,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="E:\demos\github\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_ae51f85468485acf9844c0bd699c45b791dfbfb7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\andylove\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-runtime\1.0.4\8e25da5e31669f5acf514bdd99b94ff5c7003b3b\kotlin-runtime-1.0.4.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="8e25da5e31669f5acf514bdd99b94ff5c7003b3b">
         <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\kotlin-runtime-1.0.4_59773eb9d54e655cb48fc4c3fd85421b1a34e8f9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\demos\github\MyApplication\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_792c90388e128f8dfa9806c6548f470ed2e4cf1d\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -169,17 +214,8 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="856c5a4d1aa08bedab06c77fde2bcbd62188b477">
+        sha1="5767338842c9b7116e154f8f9e44b6098242bb81">
         <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_37d9d9e1fc96ea46c6cfbadee990c2268fd4ea0c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\demos\github\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_70e81007c0cc64192ea95957b6adc1f31b66bfa0\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -210,24 +246,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="E:\demos\github\MyApplication\app\build\intermediates\exploded-aar\com.github.hotchemi\permissionsdispatcher\2.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="cf75354ce176fdaacb85b0db82bad0450ad9984b">
-        <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.hotchemi-permissionsdispatcher-2.2.0_ba7e10f7e02d5b98c5d68ae9f1834750e8e6802a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\demos\github\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_65c93988cfa2fdc02b27cbd2dcbfa27876f87bdf\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="E:\demos\github\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
@@ -237,30 +255,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="E:\demos\github\MyApplication\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="cee9dd1f0047e440d867e4c320dd3afb891f10ae">
-        <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d13628bfff9e64dc06baa74425a7a2c839abba62\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="E:\demos\github\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
         <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_58a5d9e79e762d667c483f24e4f095d952dba747\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\andylove\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.0.4\9c8d1a5d2eea3c9a7f58baa1a2fa11498cb41d0\kotlin-stdlib-1.0.4.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="09c8d1a5d2eea3c9a7f58baa1a2fa11498cb41d0">
-        <dex dex="E:\demos\github\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\kotlin-stdlib-1.0.4_fff4d55b3d7a0a73bfe7bb461b1ba4cef8a87e1c\classes.dex" />
     </item>
 
 </items>

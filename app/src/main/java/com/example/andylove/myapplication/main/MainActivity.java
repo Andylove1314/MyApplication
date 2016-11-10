@@ -1,8 +1,6 @@
 package com.example.andylove.myapplication.main;
 
 import android.Manifest;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -23,10 +21,7 @@ import com.example.andylove.myapplication.R;
 
 import butterknife.Bind;
 import permissions.dispatcher.NeedsPermission;
-import permissions.dispatcher.OnNeverAskAgain;
 import permissions.dispatcher.OnPermissionDenied;
-import permissions.dispatcher.OnShowRationale;
-import permissions.dispatcher.PermissionRequest;
 import permissions.dispatcher.RuntimePermissions;
 
 @RuntimePermissions
@@ -63,6 +58,8 @@ public class MainActivity extends JavaBaseActivity
         MainActivityPermissionsDispatcher.captureWithCheck(this);
         MainActivityPermissionsDispatcher.getCotactsWithCheck(this);
         MainActivityPermissionsDispatcher.sendMsgWithCheck(this);
+        MainActivityPermissionsDispatcher.writeWithCheck(this);
+
     }
 
     @Override
@@ -127,52 +124,31 @@ public class MainActivity extends JavaBaseActivity
         return true;
     }
 
-    @NeedsPermission(Manifest.permission.CAMERA)
-    public void capture() {
-        Toast.makeText(this, "去拍照", Toast.LENGTH_LONG).show();
-    }
-
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         MainActivityPermissionsDispatcher.onRequestPermissionsResult(this, requestCode, grantResults);
     }
 
-    @OnShowRationale(Manifest.permission.CAMERA)
-    public void getPerTip(final PermissionRequest request) {
-        new AlertDialog.Builder(this)
-                .setMessage("permission")
-                .setPositiveButton("allow", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        request.proceed();
-                    }
-                })
-                .setNegativeButton("deny", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        request.cancel();
-                    }
-                })
-                .show();
-    }
-
-    @OnPermissionDenied(Manifest.permission.CAMERA)
-    public void deny() {
-        Toast.makeText(this, "被拒绝", Toast.LENGTH_LONG).show();
-    }
-
-    @OnNeverAskAgain(Manifest.permission.CAMERA)
-    public void showAgain() {
-        Toast.makeText(this, "再来", Toast.LENGTH_LONG).show();
+    @NeedsPermission(Manifest.permission.CAMERA)
+    public void capture() {
+        Toast.makeText(this, "去拍照", Toast.LENGTH_LONG).show();
     }
 
     @NeedsPermission(Manifest.permission.READ_CONTACTS)
     void getCotacts() {
     }
 
-
     @NeedsPermission(Manifest.permission.SEND_SMS)
     void sendMsg() {
     }
+
+    @NeedsPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)
+    void write() {
+    }
+
+    @OnPermissionDenied(Manifest.permission.WRITE_EXTERNAL_STORAGE)
+    void againRequestTip() {
+    }
+
 }
