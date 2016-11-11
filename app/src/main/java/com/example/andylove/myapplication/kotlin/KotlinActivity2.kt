@@ -6,6 +6,8 @@ import android.widget.TextView
 import com.example.andylove.myapplication.KolinBaseActivity
 import com.example.andylove.myapplication.R
 import org.jetbrains.anko.find
+import org.jetbrains.anko.toast
+import java.util.*
 
 class KotlinActivity2 : KolinBaseActivity() {
 
@@ -14,13 +16,20 @@ class KotlinActivity2 : KolinBaseActivity() {
     //常量
     val SUBSYSTEM_DEPRECATED: String = "This subsystem is deprecated"
 
+    //Lambda Expression Syntax
+    val sum = { x: Int, y: Int -> x + y }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kotlin2)
         hello = find<TextView>(R.id.textView6)
         model = Model()
+        //空指针安全
         model?.name = SUBSYSTEM_DEPRECATED
         hello?.text = model?.name
+        hello?.setOnClickListener {
+            toast("悲伤就逆流成河！")
+        }
 
         for (x in 1..5) {
             Log.i("kotlin", "$x")
@@ -50,16 +59,57 @@ class KotlinActivity2 : KolinBaseActivity() {
         Log.i("kotlin", box.value)
         MyClass.create()?.name = "singleton"
 
+        var user = User(mapOf("name" to "fengkun", "age" to 30))
+        Log.i("kotlin", user.name)
+        Log.i("kotlin", "${user.age}")
+        1.shl(2)
+        Log.i("kotlin", "${double(100)}")
+
+        var list = asList(1, 2, "asd")
+        Log.i("kotlin", "${list.get(1)}")
+
+        Log.i("kotlin", "${sum.invoke(3, 7)}")
+
+        val numbers: MutableList<Int> = mutableListOf(1, 2, 3)
+
+        //空指针安全
+        var a: String? = "abc"
+        a = null
+        Log.i("kotlin", "${a?.length}")
+
+        val c = MyClass::class
+
+    }
+
+    fun hasZeros(ints: List<Int>): Boolean {
+        ints.forEach {
+            if (it == 0) return true // returns from hasZeros
+        }
+        return false
+    }
+
+
+    fun double(x: Int): Int = x * 2
+    infix fun Int.shl(x: Int) {
+        Log.i("kotlin", "infix_" + "$x")
     }
 
     class MyClass {
 
-        var name : String? = null
+        var name: String? = null
 
         companion object Factory {
             fun create(): MyClass = MyClass()
         }
     }
+
+    fun <T> asList(vararg ts: T): List<T> {
+        val result = ArrayList<T>()
+        for (t in ts)
+            result.add(t)
+        return result
+    }
+
 
     fun ori(ori: Direction) {
         when (ori) {
@@ -205,9 +255,15 @@ class KotlinActivity2 : KolinBaseActivity() {
             }
 
         }
+
+        data class User(val name: String = "", val age: Int = 0)
+
     }
 
-    data class User(val name: String = "", val age: Int = 0)
-
+    class User(val map: Map<String, Any?>) {
+        val name: String by map
+        val age: Int     by map
+    }
 
 }
+
