@@ -59,7 +59,6 @@ public class MainActivity extends JavaBaseActivity
         MainActivityPermissionsDispatcher.getCotactsWithCheck(this);
         MainActivityPermissionsDispatcher.sendMsgWithCheck(this);
         MainActivityPermissionsDispatcher.writeWithCheck(this);
-
     }
 
     @Override
@@ -151,4 +150,7 @@ public class MainActivity extends JavaBaseActivity
     void againRequestTip() {
     }
 
+    @NeedsPermission(Manifest.permission.CALL_PHONE)
+    void call() {
+    }
 }

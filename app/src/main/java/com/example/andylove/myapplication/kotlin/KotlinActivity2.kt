@@ -73,16 +73,17 @@ class KotlinActivity2 : KolinBaseActivity() {
         val numbers: MutableList<Int> = mutableListOf(1, 2, 3)
 
         //空指针安全
-        var a: String? = "abc"
+        var a: String? = null
         a = null
         Log.i("kotlin", "${a?.length}")
 
+        //反射
         val c = MyClass::class
 
     }
 
     fun hasZeros(ints: List<Int>): Boolean {
-        ints.forEach {
+        ints?.forEach {
             if (it == 0) return true // returns from hasZeros
         }
         return false
